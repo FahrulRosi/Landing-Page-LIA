@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan LIA - Beranda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Shadows */
+        .shadow-lg-custom {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1500x800');
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+<!-- Header -->
+<header class="bg-gradient-to-r from-[#003366] via-[#005f99] to-[#003366] text-white py-6 shadow-lg-custom">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center px-6">
+        <div class="flex items-center space-x-6">
+            <img src="assets/logo-lb-lia.png" alt="Yayasan LIA" class="w-40 h-auto">
+        </div>
+        <nav class="space-x-8 hidden md:flex">
+            <a href="#tentang" class="text-lg font-semibold uppercase hover:text-[#ff9800] transition-all">Tentang Kami</a>
+            <a href="#visi-misi" class="text-lg font-semibold uppercase hover:text-[#ff9800] transition-all">Visi & Misi</a>
+            <a href="#unit" class="text-lg font-semibold uppercase hover:text-[#ff9800] transition-all">Unit Kegiatan</a>
+            <a href="#kontak" class="text-lg font-semibold uppercase hover:text-[#ff9800] transition-all">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative hero-section">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 text-center text-white py-32">
+        <h2 class="text-5xl font-extrabold mb-6 text-shadow-md">Selamat Datang di Yayasan LIA</h2>
+        <p class="text-xl mb-6 font-light text-opacity-90">Menjadi mitra dalam pendidikan bahasa dan meningkatkan kualitas sumber daya manusia di Indonesia.</p>
+        <a href="#kontak" class="bg-[#ff9800] text-white py-4 px-10 rounded-full font-bold text-lg hover:bg-[#e76f51] transition-all transform hover:scale-105">Hubungi Kami</a>
+    </div>
+</section>
+
+<!-- Tentang Kami Section -->
+<section id="tentang" class="py-20 px-6 max-w-screen-xl mx-auto">
+    <div class="bg-white shadow-lg-custom rounded-xl p-10 mb-12">
+        <h2 class="text-4xl font-extrabold text-center text-[#003366] mb-10">Tentang Kami</h2>
+        <div class="flex justify-center mb-10">
+            <img src="assets/banner.png" alt="Gedung Yayasan LIA" class="rounded-lg shadow-lg-custom max-w-full h-auto">
+        </div>
+        <p class="text-lg text-gray-600 mb-6">YAYASAN LIA adalah Yayasan yang bergerak di bidang jasa pendidikan formal dan non-formal, terutama pendidikan bahasa. Didirikan pada tanggal 7 September 1959, yayasan LIA berawal dari Lembaga Indonesia Amerika yang kini berkembang menjadi lembaga pendidikan yang memiliki lebih dari 60.000 siswa.</p>
+        <p class="text-lg text-gray-600 mb-6">Motto Yayasan LIA adalah “Sekelumit Karya Mencerdaskan Bangsa”. Sejak berdirinya, kami telah berkomitmen untuk mencerdaskan bangsa dengan pendidikan yang berkualitas dan terjangkau di seluruh Indonesia.</p>
+    </div>
+</section>
+
+<!-- Visi & Misi Section -->
+<section id="visi-misi" class="py-20 bg-gradient-to-r from-white to-gray-100 text-gray-800">
+    <div class="max-w-screen-xl mx-auto px-6">
+        <div class="bg-white shadow-lg-custom rounded-xl p-10">
+            <h2 class="text-4xl font-extrabold text-center text-[#003366] mb-10">Visi & Misi</h2>
+            <p class="text-lg text-gray-600 mb-6"><strong>Visi:</strong> Menjadi pengelola lembaga pendidikan yang unggul dan bertaraf internasional terutama dalam bidang bahasa.</p>
+            <p class="text-lg text-gray-600 mb-6"><strong>Misi:</strong></p>
+            <ul class="list-disc pl-8 space-y-2 text-lg text-gray-600">
+                <li>Menciptakan organisasi yang dinamis, efektif, dan efisien pada tingkat nasional dan internasional.</li>
+                <li>Mengembangkan program dan layanan pendidikan berkualitas yang sesuai dengan kebutuhan masyarakat dan bangsa.</li>
+                <li>Menumbuhkan masyarakat pembelajar yang berkualitas ditunjang dengan perangkat pembelajaran berbasis ilmu pengetahuan teknologi dan seni.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Unit Kegiatan Section -->
+<section id="unit" class="py-20 bg-gray-50">
+    <h2 class="text-4xl font-extrabold text-center text-[#003366] mb-10">Unit Kegiatan</h2>
+    <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+        <div class="unit-item p-8 bg-white shadow-lg-custom rounded-xl hover:shadow-xl transition-all">
+            <h3 class="text-2xl font-semibold text-[#003366] mb-4">Universitas LIA</h3>
+            <p class="text-lg text-gray-600">Berdiri sejak 6 September 2023, Universitas LIA merupakan transformasi dari Sekolah Tinggi Bahasa Asing LIA yang pertama kali dibangun di Jakarta.</p>
+        </div>
+        <div class="unit-item p-8 bg-white shadow-lg-custom rounded-xl hover:shadow-xl transition-all">
+            <h3 class="text-2xl font-semibold text-[#003366] mb-4">Lembaga Bahasa LIA</h3>
+            <p class="text-lg text-gray-600">Lembaga pendidikan utama di Yayasan LIA yang telah membantu jutaan orang di Indonesia untuk meraih cita-cita pendidikan dan profesi.</p>
+        </div>
+        <div class="unit-item p-8 bg-white shadow-lg-custom rounded-xl hover:shadow-xl transition-all">
+            <h3 class="text-2xl font-semibold text-[#003366] mb-4">STBA LIA Yogyakarta</h3>
+            <p class="text-lg text-gray-600">Berfokus pada program studi D3 dan S1 Bahasa Inggris dengan kualitas terbaik dan fasilitas yang memadai.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Video Section -->
+<section class="py-20 bg-gray-50 text-center">
+    <h2 class="text-4xl font-extrabold text-[#003366] mb-10">Video Yayasan LIA</h2>
+    <div class="flex justify-center">
+        <video controls class="max-w-screen-xl w-full rounded-lg shadow-lg-custom">
+            <source src="assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<!-- Kontak Section -->
+<section id="kontak" class="py-20 px-6 max-w-screen-xl mx-auto">
+    <div class="bg-white shadow-lg-custom rounded-xl p-10 mb-12">
+        <h2 class="text-4xl font-extrabold text-center text-[#003366] mb-10">Kontak</h2>
+        <div class="content text-center">
+            <p class="text-lg text-gray-600 mb-4">Untuk informasi lebih lanjut atau pertanyaan, Anda dapat menghubungi kami melalui:</p>
+            <p class="text-lg text-gray-600 mb-4"><strong>Alamat:</strong> JL. Pengadegan Timur Raya No.3, Jakarta Selatan, Indonesia</p>
+            <p class="text-lg text-gray-600 mb-4"><strong>Email:</strong> <a href="mailto:humaslia@lia.co.id" class="text-[#003366] hover:text-[#f4a261]">humaslia@lia.co.id</a></p>
+            <p class="text-lg text-gray-600"><strong>Telepon:</strong> 021-7943526</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#003366] text-white text-center py-6">
+    <div class="mb-4">
+        <a href="#" class="footer-link text-white hover:text-[#ff9800]">Facebook</a>
+        <a href="#" class="footer-link text-white hover:text-[#ff9800]">Twitter</a>
+        <a href="#" class="footer-link text-white hover:text-[#ff9800]">YouTube</a>
+    </div>
+    <p class="text-sm">&copy; 2025 Yayasan LIA. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

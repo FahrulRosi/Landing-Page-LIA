@@ -1,0 +1,364 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8fbff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* 1. Header */
+.main-header {
+  background: #fff;
+  border-top: 6px solid #17569b;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .logo {
+  height: 70px;
+  margin-right: 16px;
+  transition: transform 0.3s ease;
+}
+.header-left .logo:hover {
+  transform: scale(1.05);
+}
+
+.yayasan {
+  font-size: 20px;
+  color: #17569b;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.main-nav ul li a:hover {
+  color: #17569b;
+  background: rgba(23, 86, 155, 0.08);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-toggle .bar {
+  width: 100%;
+  height: 4px;
+  background: #444;
+  border-radius: 2px;
+}
+
+/* Responsive nav */
+@media (max-width: 900px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 16px 0;
+    min-width: 180px;
+  }
+  .main-nav ul.show {
+    display: flex;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+/* 2. Section Card Banner */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 20px;
+}
+
+.landing-card {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  padding: 48px 40px;
+  max-width: 1100px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+.landing-card:hover {
+  transform: translateY(-6px);
+}
+
+.landing-accent {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 60%;
+  height: 70px;
+  background: linear-gradient(to right, #7ec4ea, #17569b);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
+.landing-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.landing-left {
+  flex: 1.2;
+}
+.landing-left h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #17569b;
+  margin-bottom: 18px;
+}
+.landing-left p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+.btn-landing {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 1.08rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.btn-landing:hover {
+  background: #cc7000;
+  transform: scale(1.05);
+}
+
+.landing-right {
+  flex: 1;
+}
+.landing-img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+  border: 4px solid #7ec4ea;
+}
+
+/* 3. Section Video */
+.landing-video {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  background: #fff;
+  padding: 24px;
+}
+.landing-video video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* 4. Footer */
+.main-footer {
+  background: linear-gradient(to bottom, #1a1a1a, #0d3a65);
+  color: #eaeaea;
+  padding: 50px 0 0 0;
+  margin-top: 60px;
+  font-size: 15px;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Bagian kiri */
+.footer-left {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.footer-logo {
+  height: 70px;
+}
+.footer-yayasan {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer-desc {
+  font-size: 14px;
+  color: #cfdff9;
+  max-width: 360px;
+  line-height: 1.6;
+}
+
+/* Quick Links */
+.footer-links {
+  flex: 1;
+}
+.footer-links h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+.footer-links ul li a {
+  color: #cfdff9;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+
+/* Social + Search */
+.footer-social {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-social h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px; /* jarak dengan search */
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-search {
+  width: 100%;
+  max-width: 260px;
+  margin-top: 6px; /* jarak kecil dengan icon */
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 14px;
+}
+.footer-search::placeholder {
+  color: #d0d0d0;
+}
+.footer-search:focus {
+  outline: none;
+  border-color: #7ec4ea;
+  background: rgba(255,255,255,0.25);
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  color: #cfdff9;
+  padding: 22px 0;
+  font-size: 13px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .landing-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .landing-left h1 {
+    font-size: 1.8rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .footer-left {
+    align-items: center;
+  }
+  .footer-social {
+    align-items: center;
+  }
+  .footer-search {
+    max-width: 100%;
+  }
+}
